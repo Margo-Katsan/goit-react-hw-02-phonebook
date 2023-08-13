@@ -6,7 +6,7 @@ export const ContactsList = ({ contacts, onDelete }) => {
     <ul className={css.contacts}>
       {
         contacts.map(contact => {
-          return <ContactListItem key={contact.id} contact={contact} onDelete={onDelete} />
+          return <ContactListItem contact={contact} onDelete={onDelete} />
         })
       }
     </ul>
