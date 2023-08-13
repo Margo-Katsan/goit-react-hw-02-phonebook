@@ -7,9 +7,6 @@ const schema = Yup.object().shape({
   name: Yup.string()
     .min(1, 'Too Short!')
     .max(30, 'Too Long!'),
-  number: Yup.number()
-    .min(7, 'Too Short!')
-    .max(20, 'Too Long!')
 }) 
 
 export const ContactForm = ({onAdd}) => {
